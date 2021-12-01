@@ -35,98 +35,187 @@ public class shop extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        chair = new javax.swing.JCheckBox();
-        sofa = new javax.swing.JCheckBox();
+        jLabel7 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
+        m = new javax.swing.JTextField();
+        a = new javax.swing.JTextField();
+        n = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         bed = new javax.swing.JCheckBox();
+        bquantity = new javax.swing.JTextField();
+        bcolour = new javax.swing.JTextField();
+        sofa = new javax.swing.JCheckBox();
+        squantity = new javax.swing.JTextField();
+        scolour = new javax.swing.JTextField();
+        cquantity = new javax.swing.JTextField();
+        chair = new javax.swing.JCheckBox();
+        ccolour = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        squantity = new javax.swing.JTextField();
-        cquantity = new javax.swing.JTextField();
-        bquantity = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        scolour = new javax.swing.JTextField();
-        ccolour = new javax.swing.JTextField();
-        bcolour = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        n = new javax.swing.JTextField();
-        a = new javax.swing.JTextField();
-        m = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+
+        jLabel7.setText("jLabel7");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel2.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel3.setBackground(new java.awt.Color(255, 204, 102));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel8.setFont(new java.awt.Font("Berlin Sans FB", 0, 42)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 51, 51));
+        jLabel8.setText("Welcome to Furniture.io");
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 30, 440, -1));
+
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 100));
+
+        m.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        m.setForeground(new java.awt.Color(0, 51, 51));
+        m.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mActionPerformed(evt);
+            }
+        });
+        jPanel2.add(m, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 210, 230, 30));
+
+        a.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        a.setForeground(new java.awt.Color(0, 51, 51));
+        a.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                aActionPerformed(evt);
+            }
+        });
+        jPanel2.add(a, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 170, 230, 30));
+
+        n.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        n.setForeground(new java.awt.Color(0, 51, 51));
+        n.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nActionPerformed(evt);
+            }
+        });
+        jPanel2.add(n, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 130, 230, 30));
+
+        jLabel6.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 51, 51));
+        jLabel6.setText("Mobile No:");
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, 120, -1));
+
+        jLabel5.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 51, 51));
+        jLabel5.setText("Address:");
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, 120, -1));
+
+        jLabel4.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 51, 51));
+        jLabel4.setText("Name:");
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, 120, -1));
+
+        jButton2.setBackground(new java.awt.Color(0, 0, 0));
+        jButton2.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(0, 51, 51));
+        jButton2.setText("<- Back");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 450, 120, -1));
+
+        jButton1.setBackground(new java.awt.Color(0, 0, 0));
+        jButton1.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 51, 51));
+        jButton1.setText("Pay ->");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 450, 130, -1));
+
+        bed.setBackground(new java.awt.Color(0, 153, 153));
+        bed.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        bed.setForeground(new java.awt.Color(0, 51, 51));
+        bed.setText("Bed");
+        jPanel2.add(bed, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 400, 80, -1));
+
+        bquantity.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        bquantity.setForeground(new java.awt.Color(0, 51, 51));
+        jPanel2.add(bquantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 400, 90, 30));
+
+        bcolour.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        bcolour.setForeground(new java.awt.Color(0, 51, 51));
+        jPanel2.add(bcolour, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 400, 100, 30));
+
+        sofa.setBackground(new java.awt.Color(0, 153, 153));
+        sofa.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        sofa.setForeground(new java.awt.Color(0, 51, 51));
+        sofa.setText("Sofa");
+        jPanel2.add(sofa, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 350, 80, -1));
+
+        squantity.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        squantity.setForeground(new java.awt.Color(0, 51, 51));
+        jPanel2.add(squantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 360, 90, 30));
+
+        scolour.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        scolour.setForeground(new java.awt.Color(0, 51, 51));
+        scolour.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                scolourActionPerformed(evt);
+            }
+        });
+        jPanel2.add(scolour, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 360, 100, 30));
+
+        cquantity.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        cquantity.setForeground(new java.awt.Color(0, 51, 51));
+        jPanel2.add(cquantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 320, 90, 30));
+
+        chair.setBackground(new java.awt.Color(0, 153, 153));
+        chair.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        chair.setForeground(new java.awt.Color(0, 51, 51));
         chair.setText("Chair");
         chair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 chairActionPerformed(evt);
             }
         });
-        getContentPane().add(chair, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, -1));
+        jPanel2.add(chair, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 310, 90, -1));
 
-        sofa.setText("Sofa");
-        getContentPane().add(sofa, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, -1, -1));
+        ccolour.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        ccolour.setForeground(new java.awt.Color(0, 51, 51));
+        jPanel2.add(ccolour, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 320, 100, 30));
 
-        bed.setText("Bed");
-        getContentPane().add(bed, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, -1, -1));
-
+        jLabel1.setFont(new java.awt.Font("PMingLiU-ExtB", 1, 28)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 51, 51));
         jLabel1.setText("Type");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 270, 70, -1));
 
+        jLabel2.setFont(new java.awt.Font("PMingLiU-ExtB", 1, 28)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 51, 51));
         jLabel2.setText("Quantity");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, -1, -1));
-        getContentPane().add(squantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 40, -1));
-        getContentPane().add(cquantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 40, -1));
-        getContentPane().add(bquantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 40, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, 110, -1));
 
+        jLabel3.setFont(new java.awt.Font("PMingLiU-ExtB", 1, 28)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 51, 51));
         jLabel3.setText("Colour Preference");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, 100, -1));
-        getContentPane().add(scolour, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 180, 60, -1));
-        getContentPane().add(ccolour, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 150, 60, -1));
-        getContentPane().add(bcolour, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, 60, -1));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 270, 210, -1));
 
-        jButton1.setText("Pay");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 250, 80, -1));
+        jLabel9.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(204, 0, 51));
+        jLabel9.setText("*SELECT ITEMS");
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 130, -1));
 
-        jButton2.setText("Back");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, -1, -1));
-
-        jLabel4.setText("Name");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 90, 30));
-
-        jLabel5.setText("Address");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 90, 30));
-
-        jLabel6.setText("Mob number");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 90, 30));
-
-        n.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nActionPerformed(evt);
-            }
-        });
-        getContentPane().add(n, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, 240, -1));
-
-        a.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                aActionPerformed(evt);
-            }
-        });
-        getContentPane().add(a, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 240, -1));
-        getContentPane().add(m, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 240, -1));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 510));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -227,6 +316,14 @@ public class shop extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_aActionPerformed
 
+    private void scolourActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_scolourActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_scolourActionPerformed
+
+    private void mActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -278,6 +375,11 @@ public class shop extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     public javax.swing.JTextField m;
     public javax.swing.JTextField n;
     private javax.swing.JTextField scolour;

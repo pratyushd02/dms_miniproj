@@ -33,57 +33,118 @@ public class home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
         state = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         name = new javax.swing.JTextField();
         email = new javax.swing.JTextField();
         phone_no = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
         address = new javax.swing.JTextField();
         city = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+
+        jLabel8.setText("jLabel8");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("State");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 40, -1));
-        getContentPane().add(state, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 260, 300, -1));
+        state.setForeground(new java.awt.Color(0, 51, 51));
+        state.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                stateActionPerformed(evt);
+            }
+        });
+        getContentPane().add(state, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 370, 250, 30));
 
-        jLabel2.setText("Name");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, -1, -1));
+        name.setForeground(new java.awt.Color(0, 51, 51));
+        getContentPane().add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, 250, 30));
 
-        jLabel3.setText("Email");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 40, -1));
-        getContentPane().add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 50, 300, -1));
-        getContentPane().add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 300, -1));
-        getContentPane().add(phone_no, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 300, -1));
+        email.setForeground(new java.awt.Color(0, 51, 51));
+        getContentPane().add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, 250, 30));
 
-        jLabel4.setText("Mobile Number");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
-        getContentPane().add(address, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, 300, -1));
-        getContentPane().add(city, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 220, 300, -1));
+        phone_no.setForeground(new java.awt.Color(0, 51, 51));
+        getContentPane().add(phone_no, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 250, 30));
 
-        jLabel5.setText("Address");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 40, -1));
+        address.setForeground(new java.awt.Color(0, 51, 51));
+        getContentPane().add(address, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 290, 250, 30));
 
-        jLabel6.setText("City");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 40, -1));
+        city.setForeground(new java.awt.Color(0, 51, 51));
+        getContentPane().add(city, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 330, 250, 30));
 
-        jButton1.setText("Next");
+        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel3.setBackground(new java.awt.Color(255, 204, 102));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel9.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 36)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 51, 51));
+        jLabel9.setText("CUSTOMER DETAILS");
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, -1, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dms_miniproject/customer_png-60x60.png"))); // NOI18N
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 40, -1, -1));
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 660, 140));
+
+        jButton1.setBackground(new java.awt.Color(0, 51, 51));
+        jButton1.setFont(new java.awt.Font("PMingLiU-ExtB", 1, 24)); // NOI18N
+        jButton1.setText("Next ->");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, 70, -1));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 440, 120, 30));
+
+        jLabel2.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 51, 51));
+        jLabel2.setText("Name:");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 100, -1));
+
+        jLabel4.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 51, 51));
+        jLabel4.setText("Mobile No:");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, 140, -1));
+
+        jLabel3.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 51, 51));
+        jLabel3.setText("Email:");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, 90, -1));
+
+        jLabel5.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 51, 51));
+        jLabel5.setText("Address:");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 290, 90, -1));
+
+        jLabel6.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 51, 51));
+        jLabel6.setText("City:");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 330, 90, -1));
+
+        jLabel1.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 51, 51));
+        jLabel1.setText("State:");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 370, 90, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 660, 490));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void stateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stateActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_stateActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
@@ -91,7 +152,7 @@ public class home extends javax.swing.JFrame {
         Connection connector = null;
         shop s = new shop();
         try{
-            
+
             DriverManager.registerDriver(new org.postgresql.Driver());
             String url = "jdbc:postgresql://localhost:5432/exp";
             Properties parameters = new Properties();
@@ -100,7 +161,7 @@ public class home extends javax.swing.JFrame {
             connector = DriverManager.getConnection(url, parameters);
             pst = connector.prepareStatement("insert into \"public\".customer(name,email,mobnumber,city,state,address) values(?,?,?,?,?,?);");
             pst.setString(1,name.getText());
-            
+
             pst.setString(2,email.getText());
             long mob = Long.parseLong(phone_no.getText());
             pst.setLong(3, mob);
@@ -108,16 +169,15 @@ public class home extends javax.swing.JFrame {
             pst.setString(5,state.getText());
             pst.setString(6,address.getText());
             display d = new display();
-            
+
             s.n.setEditable(false);
             s.a.setEditable(false);
             s.m.setEditable(false);
-            
+
             s.n.setText(name.getText());
             s.a.setText(address.getText());
             s.m.setText(Long.toString(mob));
-            
-     
+
             /*ResultSet rs = pst.executeQuery();
             if (rs.next()){
                 System.out.println(rs.getInt(1));
@@ -125,11 +185,11 @@ public class home extends javax.swing.JFrame {
             int r = pst.executeUpdate();
             pst.close();
             connector.close();
-            
-}catch(SQLException e){ System.out.println("ERROR"+ e); }
-      
-      s.setVisible(true);
-      setVisible(false);
+
+        }catch(SQLException e){ System.out.println("ERROR"+ e); }
+
+        s.setVisible(true);
+        setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -178,6 +238,12 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JTextField name;
     private javax.swing.JTextField phone_no;
     private javax.swing.JTextField state;
